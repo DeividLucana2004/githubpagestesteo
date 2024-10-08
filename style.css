@@ -1,7 +1,24 @@
-.contenedor{
+:root{
+    --fuentePortada: "Pacifico", cursive;
+    --fuenteHeadding: "Chicle", serif;
+    --fuenteParrafos: "Edu NSW ACT Foundation", cursive;
+    --grisOscuro: #b7b7b7;
+    --grisClaro: #e5e5e5;
+
+    --blanco: #fff;
+    --negro: #000000;
+    --naranja: #f4932b;
+    --azul: #005ab9;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+
+.menu{
     background-color: black;
-    color: aqua;
-    text-align: center;
-    margin-top: 0%;
-    padding: 40px;
+    padding: 15px;
+    margin-left: 25rem;
 }
