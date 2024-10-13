@@ -7,6 +7,7 @@ body{
 }
 
 .menu{
+    text-align: end;
     background-color: rgb(1, 48, 42);
 }
 
@@ -110,7 +111,14 @@ body{
     padding: 1.5rem;
 }
 
-.Campo1{
-    background-color: black;
-    color: palevioletred;
+.Campo1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
 }
+
+.CrecerTexto {
+    font-size: 4.5rem; /* Incrementado */
+    line-height: 1.2; /* Ajuste para evitar que se solape */
+}
+
