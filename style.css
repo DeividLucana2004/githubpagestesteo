@@ -101,15 +101,16 @@ body{
     font-size: 1.6rem;
 }
 
-.Campo1{
-    background-color: rgb(131, 1, 103);
-    color: azure;
-}
-
 .PieCavezera{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
     background-color: rgb(1, 19, 39);
     color: aqua;
     margin-top: auto;
-    font-size: 3rem;
     padding: 1.5rem;
+}
+
+.Campo1{
+    background-color: black;
+    color: palevioletred;
 }
