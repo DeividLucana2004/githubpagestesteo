@@ -14,45 +14,53 @@ body{
 .flexear{
     background-color: rgb(1, 19, 39);
     display: grid;
-    grid-template-columns: 3fr 3fr;
+    grid-template-columns: 2fr 3fr;
     text-align: center;
 }
 .juntarlo{
-    color: rgb(255, 240, 23);
-    margin-top: 1.2rem;
+    margin-top: 1.0rem;
     justify-content: space-around;
 }
 .contenedor{
-    max-width: 70rem;
+    max-width: 60rem;
     margin: 0 auto;
     width: 90%;
 }
-
 .menu-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
-
-/* Estilo para los enlaces */
 .enlaces{
     color: aqua;
     font-size: 2.2rem;
     text-decoration: none;
     padding: 1rem;
-    margin-left: 0rem;
 }
 
 .enlaces:hover {
     background-color: rgb(1, 19, 39);
     color: rgb(225, 0, 255);
 }
+@media (max-width: 768px) {
+    .flexear {
+        grid-template-columns: 1fr; /* Un solo column en móviles */
+    }
+    .P-Texto, .imagenes {
+        width: 100%; /* Ocupa el 100% en móviles */
+    }
+    .enlaces {
+        font-size: 1.8rem; /* Reducir tamaño en móviles */
+    }
+}
+ 
 .Portada {
     position: relative;
-    background-image: url(img/Noche.jpg);
+    background-image: url(img/surreal.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 57rem;
+    height: 62rem;
     display: flex; /* Usamos Flexbox para la alineación */
     justify-content: space-between; /* Espacio entre los elementos */
     align-items: center; /* Alinea verticalmente los elementos */
@@ -120,5 +128,15 @@ body{
 .CrecerTexto {
     font-size: 4.5rem; /* Incrementado */
     line-height: 1.2; /* Ajuste para evitar que se solape */
+}
+
+#Precios {
+    scroll-margin-top: 53px; /* Ajusta este valor según la altura del menú */
+}
+#Inicio{
+    scroll-margin-top: 53px;
+}
+#Consultas{
+    scroll-margin-top: 53px;
 }
 
