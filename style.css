@@ -140,3 +140,22 @@ body{
     scroll-margin-top: 53px;
 }
 
+.Campo2 {
+    background-color: rgb(2, 32, 32);
+    color: beige;
+}
+
+.flecha {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: beige;
+    float: left; /* Alinea la flecha a la derecha */
+    margin-left: 2rem;
+
+}
+
+.respuesta {
+    margin-left: 7rem;
+    font-size: 1.5rem;
+}
+
