@@ -146,6 +146,23 @@ body{
     margin-left: 2rem;
 
 }
+.enlazar {
+    background-color: black;
+    color: aliceblue;
+}
+
+.carousel-item img {
+    width: auto; /* Mantiene la proporción de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;  /* Centra el texto */
+}
 
 .respuesta {
     margin-left: 7rem;
