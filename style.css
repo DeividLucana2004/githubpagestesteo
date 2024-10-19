@@ -110,14 +110,7 @@ body{
     font-size: 1.6rem;
 }
 
-.PieCavezera{
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    background-color: rgb(1, 19, 39);
-    color: aqua;
-    margin-top: auto;
-    padding: 1.5rem;
-}
+
 
 .Campo1 {
     display: grid;
@@ -149,7 +142,7 @@ body{
     cursor: pointer;
     font-size: 1.5rem;
     color: beige;
-    float: left; /* Alinea la flecha a la derecha */
+    float: none; /* Alinea la flecha a la derecha */
     margin-left: 2rem;
 
 }
@@ -159,3 +152,19 @@ body{
     font-size: 1.5rem;
 }
 
+.PieCavezera{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    background-color: rgb(1, 19, 39);
+    color: aqua;
+    margin-top: auto;
+    padding: 1.5rem;
+}
+.icono-github{
+    color: rgb(153, 252, 5);
+    transition: color 0.3s;
+}
+.icono-github:hover{
+    color: aqua;
+    
+}
