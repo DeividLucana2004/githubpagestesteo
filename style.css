@@ -18,16 +18,8 @@ body{
     text-align: center;
 }
 .juntarlo {
-    min-height: auto; /* Altura mínima para que sea visible */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    color: yellow; /* Color del texto */
-    display: flex; /* Para centrar el contenido */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: transparent; /* Fondo completamente transparente */
 }
-
 .contenedor{
     max-width: 60rem;
     margin: 0 auto;

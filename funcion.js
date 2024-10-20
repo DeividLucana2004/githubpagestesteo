@@ -1,19 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const juntarlo = document.querySelector('.juntarlo');
-
-    // Asegúrate de que el contenedor sea visible
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                juntarlo.style.display = 'flex'; // Muestra el contenedor
-            } else {
-                juntarlo.style.display = 'none'; // Oculta el contenedor
-            }
-        });
-    });
-
-    observer.observe(juntarlo);
-});
 
 
 function toggleRespuesta(index) {
