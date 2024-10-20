@@ -17,10 +17,17 @@ body{
     grid-template-columns: 2fr 3fr;
     text-align: center;
 }
-.juntarlo{
-    margin-top: 1.0rem;
-    justify-content: space-around;
+.juntarlo {
+    min-height: auto; /* Altura mínima para que sea visible */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: yellow; /* Color del texto */
+    display: flex; /* Para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
+
 .contenedor{
     max-width: 60rem;
     margin: 0 auto;
@@ -76,7 +83,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -149,20 +156,30 @@ body{
 .enlazar {
     background-color: black;
     color: aliceblue;
-}
-
-.carousel-item img {
-    width: auto; /* Mantiene la proporción de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    padding: 2rem 0; /* Espacio alrededor de la sección */
 }
 
 .carousel-item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente */
-    text-align: center;  /* Centra el texto */
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
 }
+
+.carousel-item img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.enlazar h2 {
+    margin: 0;
+    color: rgb(153, 252, 5);
+}
+
 
 .respuesta {
     margin-left: 7rem;
