@@ -59,7 +59,7 @@ body{
     background-image: url(img/surreal.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 62rem;
+    height: 65rem;
     display: flex; /* Usamos Flexbox para la alineación */
     justify-content: space-between; /* Espacio entre los elementos */
     align-items: center; /* Alinea verticalmente los elementos */
@@ -75,14 +75,14 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
 .P-Texto {
     position: relative;
     z-index: 2;
-    color: rgb(204, 0, 255);
+    color: rgb(170, 66, 255);
     width: 45%; /* Ocupa el 45% del ancho */
     padding: 2.5rem;
     font-size: 2rem;
@@ -94,22 +94,67 @@ body{
     position: relative;
     z-index: 2; /* Poner las imágenes por encima del overlay */
     text-align: center;
-    color: rgb(7, 240, 162);
-    font: oblique bold 120% cursive;
     width: 45%; /* Ocupa el 45% del ancho */
 }
-
-.imagenes img {
-    max-width: 100%;
-    height: auto;
+.imagenes img{
+    height: 50%;
+    width: 45%;
 }
 
-.imagenes p {
-    margin-top: 1rem;
-    font-size: 1.6rem;
+.caret {
+    font-weight: bold;
+    animation: blink 1s step-end infinite;
+    color: rgb(6, 240, 248); /* El color del cursor inicial */
+}
+
+.nombre .caret{ 
+    color: rgb(145, 255, 0);;
+}
+/* Animación de parpadeo del cursor */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
 
 
+/* Estilo del texto "FRONTEND DEVELOPER" */
+.frontend {
+    font-size: 4rem; /* Ajusta el tamaño del texto para hacerlo más compacto */
+    color: rgb(60, 109, 133);
+    padding: 1rem; /* Reduce el padding para un espaciado más compacto */
+    transition: color 0.5s ease;
+    display: inline-block;
+    font-family: arial,cursive;
+}
+
+/* Estilo del nombre */
+.nombre {
+    color: rgb(93, 131, 43);
+    font-size: 2rem ; /* Tamaño más compacto para el nombre */
+    transition: color 0.5s ease;
+    margin-top: 10px; /* Espacio mínimo entre el título y el nombre */
+    font-family:  sans-serif;
+}
+
+/* Al pasar el mouse por encima del texto "FRONTEND DEVELOPER" */
+.frontend:hover {
+    color: rgb(0, 192, 250); /* Cambia a celeste al hacer hover */
+}
+
+/* Al pasar el mouse por encima del nombre */
+.nombre:hover {
+    color: rgb(145, 255, 0); /* Cambia a celeste al hacer hover */
+}
+
+/* Cuando el texto está seleccionado (después de 5 segundos) */
+.frontend.selected{
+    color: rgb(0, 255, 234);
+}
+.nombre.selected {
+    color: rgb(145, 255, 0);
+    font-size: 2rem;
+}
 
 .Campo1 {
     display: grid;
