@@ -120,7 +120,7 @@ body{
 
 /* Estilo del texto "FRONTEND DEVELOPER" */
 .frontend {
-    font-size: 4rem; /* Ajusta el tamaño del texto para hacerlo más compacto */
+    font-size: 5.5rem; /* Ajusta el tamaño del texto para hacerlo más compacto */
     color: rgb(60, 109, 133);
     padding: 1rem; /* Reduce el padding para un espaciado más compacto */
     transition: color 0.5s ease;
@@ -222,6 +222,26 @@ body{
     margin-left: 7rem;
     font-size: 1.5rem;
 }
+
+/* Aplica un borde redondeado inicialmente y una transición suave */
+.Radiarlo img {
+    border-radius: 35%; /* Imagen redonda */
+    transition: all 0.3s ease-in-out; /* Transición suave para todos los cambios */
+    box-shadow: 0 0 10px rgba(1, 2, 0, 0.979); /* Sombra suave alrededor de la imagen */
+    opacity: 0.9; /* Ligera transparencia */
+    transform: scale(1); /* Escala inicial */
+}
+
+/* Efecto al pasar el cursor sobre la imagen */
+.Radiarlo img:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8); /* Cambio de color en la sombra al pasar el cursor */
+    border-radius: 20%; /* Mantiene la imagen redonda */
+    opacity: 1; /* Imagen completamente visible */
+    transform: scale(1.1); /* La imagen se agranda ligeramente */
+    border: 5px solid rgba(0, 255, 255, 0.8); /* Borde más grueso y colorido al hacer hover */
+}
+
+
 
 .PieCavezera{
     display: grid;
