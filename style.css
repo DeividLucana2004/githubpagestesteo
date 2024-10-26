@@ -31,6 +31,7 @@ body{
     align-items: center;
     gap: 2rem;
 }
+
 .enlaces{
     color: aqua;
     font-size: 2.2rem;
@@ -42,18 +43,38 @@ body{
     background-color: rgb(1, 19, 39);
     color: rgb(225, 0, 255);
 }
-@media (max-width: 768px) {
-    .flexear {
-        grid-template-columns: 1fr; /* Un solo column en móviles */
-    }
-    .P-Texto, .imagenes {
-        width: 100%; /* Ocupa el 100% en móviles */
-    }
-    .enlaces {
-        font-size: 1.8rem; /* Reducir tamaño en móviles */
-    }
+
+.submenu {
+    display: none; /* Ocultar el menú por defecto */
+    position: absolute; /* Posicionar el menú desplegable */
+    background-color: rgb(1, 48, 42); /* Color de fondo */
+    margin-top: 0.5rem; /* Espacio entre el enlace y el menú */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    z-index: 10; /* Asegurarse de que esté por encima de otros elementos */
 }
- 
+
+.enlaces:hover + .submenu,
+.enlaces:focus + .submenu {
+    display: block; /* Mostrar el menú al pasar el cursor o hacer clic */
+}
+
+.submenu a {
+    display: block; /* Mostrar enlaces en bloque */
+    color: aqua; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 5px 10px; /* Espaciado para los enlaces */
+}
+
+.submenu a:hover {
+    background-color: rgb(1, 19, 39); /* Color de fondo al pasar el cursor */
+    color: rgb(225, 0, 255); /* Color de texto al pasar el cursor */
+}
+
+
+
+
+
 .Portada {
     position: relative;
     background-image: url(img/surreal.jpeg);
@@ -177,25 +198,6 @@ body{
     scroll-margin-top: 53px;
 }
 
-.Campo2 {
-    background-color: rgb(2, 32, 32);
-    color: beige;
-}
-
-.flecha {
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: beige;
-    float: none; /* Alinea la flecha a la derecha */
-    margin-left: 2rem;
-
-}
-.enlazar {
-    background-color: black;
-    color: aliceblue;
-    padding: 2rem 0; /* Espacio alrededor de la sección */
-}
-
 .carousel-item {
     display: flex;
     flex-direction: column;
@@ -212,16 +214,44 @@ body{
     object-fit: cover;
     margin-bottom: 1rem;
 }
+
 .enlazar h2 {
     margin: 0;
     color: rgb(153, 252, 5);
 }
+.enlazar {
+    background-color: black;
+    color: aliceblue;
+    padding: 2rem 0; /* Espacio alrededor de la sección */
+}
 
+
+.Campo2 {
+    background-color: rgb(2, 32, 32);
+    color: beige;
+}
+.Campo2 section{
+    margin-top: 2rem;
+    padding-left: 20rem;
+}
+
+.flecha {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: beige;
+    float: none;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
 
 .respuesta {
-    margin-left: 7rem;
     font-size: 1.5rem;
+    text-align: justify;
+    margin-top: 1.5rem;
+    padding-left: 5rem;
 }
+
+
 
 /* Aplica un borde redondeado inicialmente y una transición suave */
 .Radiarlo img {
@@ -240,8 +270,6 @@ body{
     transform: scale(1.1); /* La imagen se agranda ligeramente */
     border: 5px solid rgba(0, 255, 255, 0.8); /* Borde más grueso y colorido al hacer hover */
 }
-
-
 
 .PieCavezera{
     display: grid;

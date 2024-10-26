@@ -1,37 +1,44 @@
+// MENUS DE ENLACES
+function toggleMenu(event) {
+    const submenu = document.querySelector('.submenu');
+    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    event.stopPropagation(); // Evitar que el clic se propague
+}
+
+document.addEventListener('click', () => {
+    const submenu = document.querySelector('.submenu');
+    submenu.style.display = 'none'; // Ocultar menú si se hace clic fuera
+});
+
+// Añadir el evento mouseenter y mouseleave para el menú
+document.querySelector('.enlaces[href="#Cursos"]').addEventListener('mouseenter', toggleMenu);
+document.querySelector('.enlaces[href="#Cursos"]').addEventListener('mouseleave', () => {
+    document.querySelector('.submenu').style.display = 'none'; // Ocultar menú al salir
+});
+
+
+
 // Seleccionamos los elementos de texto
 const frontendText = document.querySelector('.frontend');
 const nombreText = document.querySelector('.nombre');
 const carets = document.querySelectorAll('.caret');
 
-// Función para cambiar las clases
 function cambiarColor() {
-    // Agregamos la clase 'selected' para cambiar de color
     frontendText.classList.add('selected');
     nombreText.classList.add('selected');
-
-    // Oculta el cursor temporalmente
     carets.forEach(caret => caret.style.display = 'none');
-
-    // Regresa el cursor después de 1 segundo
     setTimeout(() => {
         carets.forEach(caret => caret.style.display = 'inline');
     }, 100);
-
-    // Elimina la clase 'selected' después de 3 segundos
     setTimeout(() => {
         frontendText.classList.remove('selected');
         nombreText.classList.remove('selected');
-    }, 3000); // Cambia esto a 4000 para incluir el tiempo de parpadeo
+    }, 3000); 
 }
-
-// Ejecutamos la función de cambiar color cada 6 segundos
 setInterval(cambiarColor, 6000);
-
-// Llamamos a la función una vez al inicio
 cambiarColor();
 
-
-
+// Campo 2
 function toggleRespuesta(index) {
     const respuestas = document.querySelectorAll('.respuesta');
     const flechas = document.querySelectorAll('.flecha');
