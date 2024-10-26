@@ -1,20 +1,10 @@
 // MENUS DE ENLACES
-function toggleMenu(event) {
+function toggleMenu() {
     const submenu = document.querySelector('.submenu');
-    submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-    event.stopPropagation(); // Evitar que el clic se propague
+    submenu.style.display = submenu.style.display === 'none' || submenu.style.display === '' ? 'block' : 'none';
 }
 
-document.addEventListener('click', () => {
-    const submenu = document.querySelector('.submenu');
-    submenu.style.display = 'none'; // Ocultar menú si se hace clic fuera
-});
 
-// Añadir el evento mouseenter y mouseleave para el menú
-document.querySelector('.enlaces[href="#Cursos"]').addEventListener('mouseenter', toggleMenu);
-document.querySelector('.enlaces[href="#Cursos"]').addEventListener('mouseleave', () => {
-    document.querySelector('.submenu').style.display = 'none'; // Ocultar menú al salir
-});
 
 
 

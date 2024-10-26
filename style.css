@@ -12,13 +12,16 @@ body{
 }
 
 .flexear{
-    background-color: rgb(1, 19, 39);
+    background-color: transparent;
     display: grid;
     grid-template-columns: 2fr 3fr;
     text-align: center;
 }
 .juntarlo {
     background-color: transparent; /* Fondo completamente transparente */
+    color: greenyellow;
+    margin-top: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .contenedor{
     max-width: 60rem;
@@ -30,6 +33,7 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    position: relative; 
 }
 
 .enlaces{
@@ -37,6 +41,7 @@ body{
     font-size: 2.2rem;
     text-decoration: none;
     padding: 1rem;
+    cursor: pointer;
 }
 
 .enlaces:hover {
@@ -45,36 +50,40 @@ body{
 }
 
 .submenu {
-    display: none; /* Ocultar el menú por defecto */
-    position: absolute; /* Posicionar el menú desplegable */
-    background-color: rgb(1, 48, 42); /* Color de fondo */
-    margin-top: 0.5rem; /* Espacio entre el enlace y el menú */
-    padding: 10px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    z-index: 10; /* Asegurarse de que esté por encima de otros elementos */
+    position: absolute;
+    top: 100%; /* Se posiciona debajo del enlace principal */
+    left: 0;
+    display: none;
+    background-color: transparent;
+    padding: 0; /* Remueve el padding que agranda el menú */
 }
 
+/* Activa el submenú cuando se hace hover sobre el enlace principal */
 .enlaces:hover + .submenu,
-.enlaces:focus + .submenu {
-    display: block; /* Mostrar el menú al pasar el cursor o hacer clic */
+.submenu:hover {
+    display: block;
 }
 
 .submenu a {
-    display: block; /* Mostrar enlaces en bloque */
-    color: aqua; /* Color de texto */
-    text-decoration: none; /* Sin subrayado */
-    padding: 5px 10px; /* Espaciado para los enlaces */
+    display: block;
+    color: aqua;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem;
 }
 
+/* Estilo de hover para los enlaces del submenú */
 .submenu a:hover {
-    background-color: rgb(1, 19, 39); /* Color de fondo al pasar el cursor */
-    color: rgb(225, 0, 255); /* Color de texto al pasar el cursor */
+    background-color: transparent;
+    color: rgb(225, 0, 255);
 }
 
 
 
 
 
+
+/*INICIO*/
 .Portada {
     position: relative;
     background-image: url(img/surreal.jpeg);
@@ -230,6 +239,8 @@ body{
     background-color: rgb(2, 32, 32);
     color: beige;
 }
+
+/*CONSULTAS*/
 .Campo2 section{
     margin-top: 2rem;
     padding-left: 20rem;
@@ -271,6 +282,7 @@ body{
     border: 5px solid rgba(0, 255, 255, 0.8); /* Borde más grueso y colorido al hacer hover */
 }
 
+/*FOOTER*/
 .PieCavezera{
     display: grid;
     grid-template-columns: 3fr 3fr;
