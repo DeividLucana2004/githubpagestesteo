@@ -5,12 +5,12 @@ function toggleMenu() {
 }
 
 //Menu para dispositivos moviles
-function toggleMenu() {
+function toggleMobileMenu() {
     const menu = document.querySelector('.menu');
-    const overlay = document.querySelector('.overlay');
-    menu.classList.toggle('show'); // Alterna la clase para mostrar/ocultar el menú
-    overlay.classList.toggle('show'); // Alterna la clase para mostrar/ocultar el overlay
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
 }
+
+
 
 
 
