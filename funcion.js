@@ -4,6 +4,13 @@ function toggleMenu() {
     submenu.style.display = submenu.style.display === 'none' || submenu.style.display === '' ? 'block' : 'none';
 }
 
+//Menu para dispositivos moviles
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    const overlay = document.querySelector('.overlay');
+    menu.classList.toggle('show'); // Alterna la clase para mostrar/ocultar el menú
+    overlay.classList.toggle('show'); // Alterna la clase para mostrar/ocultar el overlay
+}
 
 
 
