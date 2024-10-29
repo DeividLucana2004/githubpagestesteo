@@ -5,7 +5,11 @@ html{
 body{
     font-size: 16px;
 }
-
+@media (max-width: 600px) {
+    body{
+        font-size: 14px;
+    }
+}
 .menu {
     display: none; /* Oculta el menú por defecto */
     text-align: end;
@@ -219,27 +223,104 @@ body{
     font-size: 2rem;
 }
 
+@media (max-width: 768px) {
+    /* Ajustes generales para móviles */
+    .Portada {
+        flex-direction: column; /* Poner elementos en columna */
+        height: auto; /* Ajustar la altura según el contenido */
+        padding: 12rem; /* Reducir padding para móviles */
+    }
+
+    .P-Texto {
+        width: 100%; /* Ocupa el 100% del ancho en móviles */
+        padding: 1.5rem; /* Reducir padding */
+        font-size: 1.5rem; /* Reducir el tamaño de fuente */
+        text-align: center; /* Centrar texto en móviles */
+    }
+
+    .P-Texto h1 {
+        font-size: 2.5rem; /* Ajustar el tamaño del título */
+    }
+
+    .imagenes {
+        width: 100%; /* Ocupa el 100% del ancho en móviles */
+        margin-top: 1.5rem; /* Agregar un poco de espacio encima */
+    }
+
+    .imagenes img {
+        height: auto; /* Ajuste automático según la pantalla */
+        width: 60%; /* Ajuste de ancho de la imagen en móviles */
+    }
+
+    .frontend {
+        font-size: 3.5rem; /* Reducir tamaño del texto para móviles */
+        padding: 0.5rem;
+    }
+
+    .nombre {
+        font-size: 1.5rem; /* Reducir el tamaño del nombre */
+        margin-top: 0.5rem; /* Reducir espacio superior */
+    }
+
+    .btn {
+        font-size: 1.5rem; /* Reducir tamaño del botón */
+        padding: 0.8rem 1.5rem; /* Ajustar padding para mejorar el tamaño en móvil */
+    }
+
+    /* Ajustes de márgenes y paddings para móviles */
+    .Portada::before {
+        background-color: rgba(0, 0, 0, 0.5); /* Ajustar overlay para mejor visibilidad en móvil */
+    }
+}
+
+
+
+
+/* PRECIOS */
 .Campo1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+    gap: 1.5rem; /* Reduce el espacio entre las tarjetas */
 }
 
-.CrecerTexto {
-    font-size: 4.5rem; /* Incrementado */
-    line-height: 1.2; /* Ajuste para evitar que se solape */
+/* Tamaños responsivos */
+@media (max-width: 768px) {
+    .Campo1 {
+        grid-template-columns: 1fr; /* Muestra las tarjetas en una sola columna */
+        gap: 1rem; /* Reduce aún más el espacio entre tarjetas en móviles */
+    }
+    
+    /* Ajustes en el tamaño de fuente y espaciado */
+    .CrecerTexto {
+        font-size: 3.2rem; /* Tamaño de fuente más pequeño para móviles */
+    }
+    
+    .card-body {
+        padding: 0.75rem; /* Reduce el padding interno en móviles */
+    }
+    
+    /* Reduce el tamaño del botón en pantallas pequeñas */
+    .btn {
+        font-size: 1.2rem;
+        padding: 0.75rem 1.5rem;
+    }
 }
+
+
+
 
 #Precios {
-    scroll-margin-top: 53px; /* Ajusta este valor según la altura del menú */
+    scroll-margin-top: 0rem; /* Ajusta este valor según la altura del menú */
 }
 #Inicio{
-    scroll-margin-top: 53px;
+    scroll-margin-top: 0rem;
 }
 #Consultas{
-    scroll-margin-top: 53px;
+    scroll-margin-top: 0rem;
 }
 
+/* Estilos generales para el carrusel */
 .carousel-item {
     display: flex;
     flex-direction: column;
@@ -252,7 +333,7 @@ body{
     width: auto;
     height: auto;
     max-width: 100%;
-    max-height: 400px;
+    max-height: 400px; /* Ajusta este valor según necesites */
     object-fit: cover;
     margin-bottom: 1rem;
 }
@@ -267,37 +348,93 @@ body{
     padding: 2rem 0; /* Espacio alrededor de la sección */
 }
 
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 250px; /* Reduce la altura máxima en dispositivos móviles */
+        margin-bottom: 0.5rem; /* Reduce el margen inferior */
+    }
 
+    .enlazar h3 {
+        font-size: 2rem; /* Ajusta el tamaño del texto */
+    }
+}
+
+
+
+
+
+/*CONSULTAS*/
 .Campo2 {
     background-color: rgb(2, 32, 32);
     color: beige;
 }
 
-/*CONSULTAS*/
-.Campo2 section{
-    margin-top: 2rem;
-    padding-left: 20rem;
-}
-
-.flecha {
-    cursor: pointer;
-    font-size: 1.5rem;
+/* CONSULTAS */
+.Campo2 {
+    background-color: rgb(2, 32, 32);
     color: beige;
-    float: none;
-    margin-left: 3rem;
+}
+
+/* CONSULTAS */
+.Campo2 section {
     margin-top: 2rem;
+    padding-left: 5rem; /* Reducido para pantallas pequeñas */
+    padding-right: 5rem; /* Añadido para equilibrio */
 }
 
-.respuesta {
-    font-size: 1.5rem;
-    text-align: justify;
-    margin-top: 1.5rem;
-    padding-left: 5rem;
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .Campo2 section {
+        padding-left: 1rem; /* Menos espacio en pantallas pequeñas */
+        padding-right: 1rem; /* Menos espacio en pantallas pequeñas */
+    }
+
+    .flecha {
+        font-size: 1.2rem; /* Tamaño de fuente reducido */
+        margin-left: 1rem; /* Reducido para pantallas más pequeñas */
+        margin-top: 1rem; /* Reducido para pantallas más pequeñas */
+    }
+
+    .respuesta {
+        font-size: 1.3rem; /* Tamaño de fuente reducido para mejor legibilidad */
+        padding-left: 2rem; /* Menos espacio para el texto */
+    }
+
+    h1 {
+        font-size: 3.5rem; /* Tamaño de título reducido para pantallas pequeñas */
+        padding: 2rem; /* Menos padding para un mejor ajuste */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Tamaño de subtítulo reducido */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .Campo2 section {
+        padding-left: 0.5rem; /* Aumentar ajuste en pantallas muy pequeñas */
+        padding-right: 0.5rem; /* Aumentar ajuste en pantallas muy pequeñas */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Tamaño de título aún más reducido */
+    }
+
+    .flecha {
+        font-size: 1rem; /* Aún más pequeño para caber en la pantalla */
+    }
+
+    .respuesta {
+        font-size: 0.9rem; /* Ajuste adicional en texto */
+    }
 }
 
 
-
+/**/
 /* Aplica un borde redondeado inicialmente y una transición suave */
+
 .Radiarlo img {
     border-radius: 35%; /* Imagen redonda */
     transition: all 0.3s ease-in-out; /* Transición suave para todos los cambios */
@@ -312,20 +449,86 @@ body{
     transform: scale(1.1);
     border: 5px solid rgba(0, 255, 255, 0.8);
 }
+.Campo2 {
+    padding-top: 10rem; /* Padding superior */
+}
 
-.PieCavezera{
+/* Ajustes generales para pantallas pequeñas */
+@media (max-width: 768px) {
+    .Campo2 h1 {
+        font-size: 2.5rem; /* Tamaño del título reducido */
+        padding: 1rem; /* Menos padding */
+    }
+
+    .Campo2 p {
+        font-size: 1.5rem; /* Tamaño del texto reducido */
+    }
+
+    .Radiarlo img {
+        width: 50%; /* Imagen ocupa el 100% del ancho disponible */
+        height: auto; /* Mantener la proporción */
+    }
+
+    .row {
+        flex-direction: column; /* Colocar elementos en columna */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .Campo2 h1 {
+        font-size: 2rem; /* Más pequeño para pantallas muy pequeñas */
+    }
+
+    .Campo2 p {
+        font-size: 1.2rem; /* Aún más pequeño */
+    }
+
+    .Radiarlo img {
+        width: 100%; /* Imagen ocupa el 100% del ancho disponible */
+        height: auto; /* Mantener la proporción */
+    }
+}
+
+
+.PieCavezera {
     display: grid;
-    grid-template-columns: 3fr 3fr;
+    grid-template-columns: 3fr 3fr; /* Diseño por defecto para pantallas grandes */
     background-color: rgb(1, 19, 39);
     color: aqua;
     margin-top: auto;
     padding: 1.5rem;
 }
-.icono-github{
+
+.icono-github {
     color: rgb(153, 252, 5);
     transition: color 0.3s;
 }
-.icono-github:hover{
+
+.icono-github:hover {
     color: aqua;
-    
 }
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+    .PieCavezera {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+        text-align: center; /* Centrar el texto en móviles */
+        padding: 1rem; /* Ajustar padding para móviles */
+    }
+
+    .row {
+        justify-content: center; /* Centrar contenido en la fila */
+        flex-direction: column; /* Colocar elementos en columna */
+    }
+
+    .row h3, .row p {
+        margin: 0.5rem 0; /* Espacio entre el título y el párrafo */
+    }
+
+    .icono-github {
+        font-size: 2rem; /* Aumentar el tamaño de los iconos para móviles */
+        margin: 0.5rem; /* Espaciado entre iconos */
+    }
+}
+

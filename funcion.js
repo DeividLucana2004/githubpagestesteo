@@ -9,13 +9,7 @@ function toggleMobileMenu() {
     const menu = document.querySelector('.menu');
     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
 }
-
-
-
-
-
-
-// Seleccionamos los elementos de texto
+// Seleccionamos los elementos de texto Del MENU
 const frontendText = document.querySelector('.frontend');
 const nombreText = document.querySelector('.nombre');
 const carets = document.querySelectorAll('.caret');
@@ -35,6 +29,8 @@ function cambiarColor() {
 setInterval(cambiarColor, 6000);
 cambiarColor();
 
+
+
 // Campo 2
 function toggleRespuesta(index) {
     const respuestas = document.querySelectorAll('.respuesta');
@@ -48,3 +44,14 @@ function toggleRespuesta(index) {
         flechas[index].innerHTML = "&#9660;";
     }
 }
+
+/* Radiarlo*/
+function cambiarImagen() {
+    const imagen = document.querySelector('.Radiarlo img');
+    if (imagen.src.includes('Noche.jpg')) {
+        imagen.src = 'img/OtraImagen.jpg'; // Cambia a otra imagen
+    } else {
+        imagen.src = 'img/Noche.jpg'; // Cambia de vuelta a la original
+    }
+}
+
