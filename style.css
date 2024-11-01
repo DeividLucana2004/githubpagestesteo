@@ -382,6 +382,9 @@ body{
     padding-left: 5rem; /* Reducido para pantallas pequeñas */
     padding-right: 5rem; /* Añadido para equilibrio */
 }
+.respuesta {
+    font-size: 1.5rem;
+}
 
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) {
@@ -491,9 +494,10 @@ body{
 }
 
 
+/* Estilos generales para el pie de página */
 .PieCavezera {
     display: grid;
-    grid-template-columns: 3fr 3fr; /* Diseño por defecto para pantallas grandes */
+    grid-template-columns: 3fr 3fr; /* Diseño para escritorio: dos columnas */
     background-color: rgb(1, 19, 39);
     color: aqua;
     margin-top: auto;
@@ -512,23 +516,35 @@ body{
 /* Estilos específicos para dispositivos móviles */
 @media (max-width: 768px) {
     .PieCavezera {
-        grid-template-columns: 1fr; /* Una sola columna en móviles */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center; /* Centrar el texto en móviles */
-        padding: 1rem; /* Ajustar padding para móviles */
+        padding: 1rem;
     }
 
-    .row {
-        justify-content: center; /* Centrar contenido en la fila */
-        flex-direction: column; /* Colocar elementos en columna */
+    .Ajuste {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
     }
 
-    .row h3, .row p {
-        margin: 0.5rem 0; /* Espacio entre el título y el párrafo */
+    .Ajuste h3 {
+        margin: 0.5rem 0; /* Espacio entre el título y los iconos */
+    }
+
+    .Ajuste .iconos-container {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem; /* Espacio entre los iconos */
     }
 
     .icono-github {
-        font-size: 2rem; /* Aumentar el tamaño de los iconos para móviles */
-        margin: 0.5rem; /* Espaciado entre iconos */
+        font-size: 2rem; /* Tamaño de los iconos en móviles */
     }
 }
+
+
 

@@ -9,6 +9,9 @@ function toggleMobileMenu() {
     const menu = document.querySelector('.menu');
     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
 }
+
+
+
 // Seleccionamos los elementos de texto Del MENU
 const frontendText = document.querySelector('.frontend');
 const nombreText = document.querySelector('.nombre');
