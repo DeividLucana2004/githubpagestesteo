@@ -12,29 +12,56 @@
     <link rel="icon" href="img/Logo.png">
 </head>
 <body>
-    <div class="flexear fixed-top">
-    <div class="juntarlo text-center">
-        <h2>CLASES ONLINE</h2>
-    </div>
-    <div class="juntarlo2">
-        <i class="bi bi-three-dots-vertical menu-icon" onclick="toggleMobileMenu()"></i>
-        <nav class="menu">
-            <div class="contenedor menu-flex mx-3">
-                <span class="enlaces mx-3" onclick="toggleMenu()">CURSOS</span>
-                <div class="submenu">
-                    <a href="#informatica">Informática</a>
-                    <a href="#hardware">Ensamblaje</a>
-                    <a href="#software">Programación</a>
+    <!--<div class="flexear fixed-top">
+        <div class="juntarlo text-center">
+            <h2>CLASES ONLINE</h2>
+        </div>
+        <div class="juntarlo2">
+            <i class="bi bi-three-dots-vertical menu-icon" onclick="toggleMobileMenu()"></i>
+            <nav class="menu">
+                <div class="contenedor menu-flex mx-3">
+                    <span class="enlaces mx-3" onclick="toggleMenu()">CURSOS</span>
+                    <div class="submenu">
+                        <a href="#informatica" onclick="closeMenu()">Informática</a>
+                        <a href="#hardware" onclick="closeMenu()">Ensamblaje</a>
+                        <a href="#software" onclick="closeMenu()">Programación</a>
+                    </div>
+                    <a class="enlaces mx-3" href="#Inicio" onclick="closeMenu()">INICIO</a>
+                    <a class="enlaces mx-3" href="#Precios" onclick="closeMenu()">PRECIOS</a>
+                    <a class="enlaces mx-3" href="#Consultas" onclick="closeMenu()">CONSULTAS</a>
+                    <a class="enlaces mx-3" href="#Registrarse" onclick="closeMenu()">REGISTRARSE</a>
                 </div>
-                <a class="enlaces mx-3" href="#Inicio">INICIO</a>
-                <a class="enlaces mx-3" href="#Precios">PRECIOS</a>
-                <a class="enlaces mx-3" href="#Consultas">CONSULTAS</a>
-                <a class="enlaces mx-3" href="#Registrarse">REGISTRARSE</a>
+            </nav>
+        </div>
+    </div>-->
+    <header class="header">
+        <div class="contenedor">
+            <div class="logo">
+                <h2>CLASES ONLINE</h2>
             </div>
-        </nav>
-    </div>
-</div>
-
+            <div class="Menu_Celular">
+                <label for="btn-menu">Menu</label>
+            </div>
+            <input type="checkbox" id="btn-menu">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#Inicio">INICIO</a></li>
+                    <li><a href="#Precios">PRECIOS</a></li>
+                    <li class="submenu-item">
+                        <a href="#Cursos">CURSOS</a>
+                        <i class="bi bi-caret-down Colorear" onclick="toggleSubmenu()"></i>
+                        <ul class="submenu" id="submenu">
+                            <li><a href="#">INFORMATICA</a></li>
+                            <li><a href="#">PROGRAMACION</a></li>
+                            <li><a href="#">ENSAMBLAJE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Consultas">CONSULTAS</a></li>
+                    <li><a href="#Registrarse">REGISTRARSE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 
     <header id="Inicio" class="Portada">

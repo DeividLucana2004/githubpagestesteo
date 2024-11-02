@@ -1,14 +1,9 @@
-// MENUS DE ENLACES
-function toggleMenu() {
-    const submenu = document.querySelector('.submenu');
-    submenu.style.display = submenu.style.display === 'none' || submenu.style.display === '' ? 'block' : 'none';
+// Submenu de enlace
+function toggleSubmenu(){
+    const submenu = document.getElementById("submenu");
+    submenu.style.display = submenu.style.display === "block" ? "none" : "block";
 }
 
-//Menu para dispositivos moviles
-function toggleMobileMenu() {
-    const menu = document.querySelector('.menu');
-    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-}
 
 
 

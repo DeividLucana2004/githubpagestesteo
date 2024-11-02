@@ -5,123 +5,146 @@ html{
 body{
     font-size: 16px;
 }
-@media (max-width: 600px) {
-    body{
-        font-size: 14px;
-    }
-}
-.menu {
-    display: none; /* Oculta el menú por defecto */
-    text-align: end;
-    background-color: transparent;
-}
 
-.flexear {
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    text-align: center;
-    padding: 1.2rem;
-}
-
-.juntarlo {
-    background-color: transparent; /* Fondo completamente transparente */
-    color: greenyellow;
-    margin-top: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Estilos generales de la cabecera */
+.header {
+    width: 100%;
+    height: 65px;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .contenedor {
-    max-width: 60rem;
-    margin: 0 auto;
-    width: 90%;
-}
-
-.menu-flex {
+    max-width: 1100px;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
-    position: relative; 
+    justify-content: space-between;
 }
 
-.enlaces {
-    color: aqua;
-    font-size: 2.2rem;
-    text-decoration: none;
-    padding: 1rem;
-    cursor: pointer;
+.logo {
+    color: rgb(115, 255, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
 
-.enlaces:hover {
-    background-color: transparent;
-    color: rgb(225, 0, 255);
-}
-
-.submenu {
-    position: absolute;
-    top: 100%; /* Se posiciona debajo del enlace principal */
-    left: 0;
-    display: none;
-    background-color: transparent;
-    padding: 0; /* Remueve el padding que agranda el menú */
-}
-
-/* Activa el submenú cuando se hace hover sobre el enlace principal */
-.enlaces:hover + .submenu,
-.submenu:hover {
-    display: block;
-}
-
-.submenu a {
-    display: block;
-    color: aqua;
+.menu {
+    line-height: 65px;
     font-size: 2rem;
-    text-decoration: none;
-    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Estilo de hover para los enlaces del submenú */
-.submenu a:hover {
-    background-color: transparent;
-    color: rgb(225, 0, 255);
-}
-
-.menu-icon {
-    display: block;
-    font-size: 3.5rem; /* Tamaño del ícono aumentado */
-    color: rgb(0, 255, 234);
-    cursor: pointer;
-    margin-left: 6em;
-    padding: 1.5rem; /* Agrega padding para hacerlo clickeable */
-    background-color: transparent;
-    position: relative;
-    z-index: 10; /* Asegura que esté encima del resto */
-}
-
-/* Solo en pantallas grandes */
-@media (min-width: 769px) {
-    .menu {
-        display: flex; /* Muestra el menú en pantallas grandes */
-    }
-    .menu-icon {
-        display: none; /* Oculta el ícono en pantallas grandes */
-    }
-}
-
-/* Despliega el menú al hacer hover en móviles */
-.menu-icon:hover + .menu,
-.menu-icon:focus + .menu {
+/* Estilos del menú principal */
+.menu ul {
     display: flex;
-    flex-direction: column; /* Ordena el menú en columna */
-    position: absolute;
-    top: 80%; /* Ajusta la posición */
-    right: 0;
-    background-color: transparent; /* Fondo opcional para el menú desplegable */
-    width: 100%; /* Ancho completo en móvil */
-    z-index: 5; /* Asegura que esté debajo del ícono */
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+.menu a {
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: aqua;
+    transition: all 500ms ease;
+}
+.Colorear{
+    color: aqua;
+}
+.menu a:hover {
+    color: greenyellow;
+}
+
+/* Estilos específicos para el elemento de submenú */
+.submenu-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Alinear ícono de caret a la derecha */
+.submenu-item a {
+    margin-right: 10px;
+}
+
+.submenu-item i {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Estilos para el submenú */
+.menu .submenu {
+    display: none; /* Oculto por defecto */
+    background-color: transparent;
+    box-shadow: 3px 10px 10px transparent;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    width: max-content;
+    z-index: 1000;
+}
+.menu .submenu li a {
+    line-height: 50px;
+    padding: 10px;
+    color: aqua;
+    white-space: nowrap;
+}
+
+/* Mostrar el submenú con el botón */
+.menu ul li:hover .submenu {
+    display: block;
+}
+
+/* Ocultar checkbox del menú móvil */
+#btn-menu {
+    display: none;
+}
+
+.Menu_Celular {
+    display: none;
+}
+
+/* Estilos del botón de menú móvil */
+.Menu_Celular label {
+    color: #fff;
+    background: transparent;
+    padding: 5px;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Media Query para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .menu {
+        position: absolute;
+        background: #234;
+        width: 100%;
+        height: 100vh;
+        top: 60px;
+        left: 0;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+        display: flex;
+        flex-direction: column;
+    }
+    #btn-menu:checked ~ .menu {
+        transform: translateX(0%);
+    }
+    .menu a {
+        display: block;
+        padding: 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .Menu_Celular {
+        display: block;
+    }
+}
 
 
 
