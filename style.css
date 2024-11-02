@@ -1,150 +1,63 @@
 html{
     font-size: 62.5%;
-    background-color: rgb(1, 19, 39);
+    background-color: rgba(1, 19, 39, 0.26);
 }
 body{
     font-size: 16px;
 }
-
-/* Estilos generales de la cabecera */
-.header {
-    width: 100%;
-    height: 65px;
-    background: transparent;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
-
-.contenedor {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    color: rgb(115, 255, 1);
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-}
-
-.menu {
-    line-height: 65px;
-    font-size: 2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Estilos del menú principal */
-.menu ul {
-    display: flex;
-    list-style: none;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.menu a {
-    display: block;
-    padding: 0px 20px;
+/* COLOREAR EL MENU */
+.Colorear {
+    background-color: rgb(1, 19, 39); /* Fondo de la barra de navegación */
+    position: fixed; /* Fija el menú en la parte superior */
+    width: 100%; /* Asegura que el menú ocupe todo el ancho */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+    top: 0; /* Asegura que el menú esté en la parte superior */
+}
+
+.Colorear a {
+    color: aqua; /* Color del texto de todos los enlaces */
     text-decoration: none;
-    color: aqua;
     transition: all 500ms ease;
-}
-.Colorear{
-    color: aqua;
-}
-.menu a:hover {
-    color: greenyellow;
+    border-bottom: 4px solid transparent;
 }
 
-/* Estilos específicos para el elemento de submenú */
-.submenu-item {
-    position: relative;
-    display: flex;
-    align-items: center;
+.Colorear a:hover {
+    color: #35fc35; /* Color de los enlaces al pasar el mouse */
+    border-bottom: 4px solid;
 }
 
-/* Alinear ícono de caret a la derecha */
-.submenu-item a {
-    margin-right: 10px;
+.Colorear .nav-link.active {
+    background-color: rgb(1, 19, 39); /* Fondo del enlace activo */
+    color: #183bd6; /* Color del texto del enlace activo */
 }
 
-.submenu-item i {
-    cursor: pointer;
-    font-size: 1.5rem;
+.Colorear .dropdown-menu {
+    background-color: rgb(1, 19, 39); /* Fondo de menú desplegable */
 }
 
-/* Estilos para el submenú */
-.menu .submenu {
-    display: none; /* Oculto por defecto */
-    background-color: transparent;
-    box-shadow: 3px 10px 10px transparent;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 0;
-    width: max-content;
-    z-index: 1000;
-}
-.menu .submenu li a {
-    line-height: 50px;
-    padding: 10px;
-    color: aqua;
-    white-space: nowrap;
+.Colorear .dropdown-item {
+    color: aqua; /* Color de los elementos del menú desplegable */
+    padding-top: 1rem;
+    border-bottom: 4px solid transparent;
 }
 
-/* Mostrar el submenú con el botón */
-.menu ul li:hover .submenu {
-    display: block;
+.Colorear .dropdown-item:hover {
+    background-color: rgb(1, 19, 39); /* Fondo de menú desplegable */
+    color: #35fc35; /* Color al pasar el mouse sobre los elementos del menú desplegable */
+    border-bottom: 4px solid; /* Estilo adicional al pasar el mouse */
 }
 
-/* Ocultar checkbox del menú móvil */
-#btn-menu {
-    display: none;
-}
 
-.Menu_Celular {
-    display: none;
-}
 
-/* Estilos del botón de menú móvil */
-.Menu_Celular label {
-    color: #fff;
-    background: transparent;
-    padding: 5px;
-    font-size: 1.4rem;
-    border-radius: 3px;
-    cursor: pointer;
-}
 
-/* Media Query para dispositivos móviles */
-@media only screen and (max-width: 768px) {
-    .menu {
-        position: absolute;
-        background: #234;
-        width: 100%;
-        height: 100vh;
-        top: 60px;
-        left: 0;
-        transition: all 500ms ease;
-        transform: translateX(-100%);
-        display: flex;
-        flex-direction: column;
-    }
-    #btn-menu:checked ~ .menu {
-        transform: translateX(0%);
-    }
-    .menu a {
-        display: block;
-        padding: 20px;
-        margin-top: 10px;
-        text-align: center;
-    }
-    .Menu_Celular {
-        display: block;
-    }
-}
+
+
 
 
 
