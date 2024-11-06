@@ -4,10 +4,17 @@ function toggleSubmenu(){
     submenu.style.display = submenu.style.display === "block" ? "none" : "block";
 }
 
+//SPA de otro contenido
+function Inicio(pageId){
+    const pages = document.querySelectorAll('SPAS')
+    pages.forEach(page =>{
+        page.classList.remove('')
+    })
+    document.getElementById(pageId).classList.add('')
+}
 
 
-
-// Seleccionamos los elementos de texto Del MENU
+// Texto de frontend  nombre
 const frontendText = document.querySelector('.frontend');
 const nombreText = document.querySelector('.nombre');
 const carets = document.querySelectorAll('.caret');
