@@ -41,16 +41,105 @@
                         </ul>
                     </li>
                     <li class="nav-item" >
-                        <a class="nav-link mx-4 " href="#Login" onclick="Inicio('Login')">LOGIN</a>
+                        <button class="nav-link mx-4 btnLogin-popup" href="#Login" >LOGIN</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div id="Login" class="SPAS">
-        <h2>Esto es inicio de secion</h2>
-    </div>
+    <section class="seccion">
+        <div class="wrapper">
+            <span class="icon-close">
+                <i class="bi bi-x-square-fill"></i>
+            </span>
+
+            <div class="logreg-box">
+
+                <!--Login-->
+                <div class="form-box login">
+                    <div class="logreg-title">
+                        <h2>LOGIN</h2>
+                        <p>Por favor inicialo para registrarse</p>
+                    </div>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icono"><i class="bi bi-envelope-fill"></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="icono"><i class="bi bi-lock-fill"></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        
+
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#">Forgot password</a>
+                        </div>
+                        <button type="submit" class="botonsito">Login</button>
+
+                        <div class="logreg-link">
+                            <p>Don account <a href="#" class="register-link">Registrar</a></p>
+                        </div>
+                    </form>
+                </div>
+
+                <!--Registrarse-->
+                <div class="form-box register">
+                    <div class="logreg-title">
+                        <h2>REGISTRARSE</h2>
+                        <p>Por favor registrarse wacho</p>
+                    </div>
+
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icono"><i class="bi bi-person-circle"></i></span>
+                            <input type="text" required>
+                            <label>Full name</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icono"><i class="bi bi-envelope-fill"></i></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="icono"><i class="bi bi-lock-fill"></i></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        
+
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">agree to tj=he term & conditions</label>
+                        </div>
+                        <button type="submit" class="botonsito">Register</button>
+
+                        <div class="logreg-link">
+                            <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="media-options">
+                <a href="#">
+                    <i class="bi bi-google"></i>
+                    <span>Login with Google</span>
+                </a>
+                <a href="#">
+                    <i class="bi bi-bootstrap-fill"></i>
+                    <span>Login with Bootstrap</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <header id="Inicio" class="Portada">
         <div class="P-Texto">
