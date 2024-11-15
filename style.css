@@ -372,7 +372,7 @@ box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
 
 /* Estilo del nombre */
 .nombre {
-    color: rgba(93, 131, 43, 0.842);
+    color: rgba(115, 117, 112, 0.842);
     font-size: 2rem ; /* Tamaño más compacto para el nombre */
     transition: color 0.5s ease;
     margin-top: 10px; /* Espacio mínimo entre el título y el nombre */
@@ -388,7 +388,7 @@ box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
     color: rgb(0, 255, 234);
 }
 .nombre.selected {
-    color: rgb(102, 255, 0);
+    color: rgb(0, 255, 98);
     font-size: 2rem;
 }
 
@@ -661,6 +661,15 @@ box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
         height: auto; /* Mantener la proporción */
     }
 }
+
+
+/*PROFESION */
+.PROFESION{
+    background-color: rgb(0, 34, 48);
+    color: seashell;
+    text-align: center;
+}
+
 
 
 /* Estilos generales para el pie de página */
