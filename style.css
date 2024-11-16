@@ -278,7 +278,7 @@ body{
 /*INICIO*/
 .Portada {
     position: relative;
-    background-image: url(img/surreal.jpeg);
+    background-image: url(img/FondoP.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 65rem;
@@ -531,17 +531,9 @@ box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
 
 
 
-
-
-/*CONSULTAS*/
-.Campo2 {
-    background-color: rgb(2, 32, 32);
-    color: beige;
-}
-
 /* CONSULTAS */
 .Campo2 {
-    background-color: rgb(2, 32, 32);
+    background-color: rgb(0, 34, 48);
     color: beige;
 }
 
@@ -553,6 +545,9 @@ box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
 }
 .respuesta {
     font-size: 1.5rem;
+}
+.Campo2 h1{
+    padding: 4rem;
 }
 
 /* Ajustes para pantallas más pequeñas */
@@ -603,72 +598,35 @@ box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
     }
 }
 
-
-/**/
-/* Aplica un borde redondeado inicialmente y una transición suave */
-
-.Radiarlo img {
-    border-radius: 35%; /* Imagen redonda */
-    transition: all 0.3s ease-in-out; /* Transición suave para todos los cambios */
-    box-shadow: 0 0 10px rgba(1, 2, 0, 0.979); /* Sombra suave alrededor de la imagen */
-    opacity: 0.9; /* Ligera transparencia */
-    transform: scale(1); /* Escala inicial */
-}
-.Radiarlo img:hover {
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8); 
-    border-radius: 20%;
-    opacity: 1;
-    transform: scale(1.1);
-    border: 5px solid rgba(0, 255, 255, 0.8);
-}
-.Campo2 {
-    padding-top: 10rem; /* Padding superior */
-}
-
-/* Ajustes generales para pantallas pequeñas */
-@media (max-width: 768px) {
-    .Campo2 h1 {
-        font-size: 2.5rem; /* Tamaño del título reducido */
-        padding: 1rem; /* Menos padding */
-    }
-
-    .Campo2 p {
-        font-size: 1.5rem; /* Tamaño del texto reducido */
-    }
-
-    .Radiarlo img {
-        width: 50%; /* Imagen ocupa el 100% del ancho disponible */
-        height: auto; /* Mantener la proporción */
-    }
-
-    .row {
-        flex-direction: column; /* Colocar elementos en columna */
-    }
-}
-
-/* Ajustes para pantallas muy pequeñas */
-@media (max-width: 480px) {
-    .Campo2 h1 {
-        font-size: 2rem; /* Más pequeño para pantallas muy pequeñas */
-    }
-
-    .Campo2 p {
-        font-size: 1.2rem; /* Aún más pequeño */
-    }
-
-    .Radiarlo img {
-        width: 100%; /* Imagen ocupa el 100% del ancho disponible */
-        height: auto; /* Mantener la proporción */
-    }
-}
-
-
 /*PROFESION */
 .PROFESION{
     background-color: rgb(0, 34, 48);
     color: seashell;
     text-align: center;
 }
+/* Para uniformar las imágenes */
+.img-uniform {
+    width: 100%;          /* Se ajusta al ancho del contenedor */
+    height: 300px;        /* Altura fija para mantener consistencia */
+    object-fit: cover;    /* Recorta y ajusta la imagen al contenedor */
+    object-position: center; /* Centra la imagen si se recorta */
+}
+.adelantar {
+    display: flex;           /* Activa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    margin: 0 auto;          /* Centra el contenedor en relación al padre */
+}
+
+
+.separacion > .col {
+    margin-bottom: 2rem; /* Espaciado vertical entre columnas */
+}
+
+.separacion {
+    gap: 1.5rem; /* Ajustar el espacio entre columnas */
+}
+
 
 
 
