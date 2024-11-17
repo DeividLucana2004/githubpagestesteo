@@ -37,121 +37,64 @@
                         <a class="nav-link dropdown-toggle mx-4" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">CURSOS</a>
                         <ul class="dropdown-menu fs-2" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item mx-auto" href="html/Informatica.html">INFORMATICA</a></li>
+                            <li><a class="dropdown-item mx-auto" href="html/Tecnologia.html">TECNOLOGIA</a></li>
                             <li><a class="dropdown-item mx-auto" href="html/Ensamblake.html">ENSAMBLAJE</a></li>
                             <li><a class="dropdown-item mx-auto" href="html/Programacion.html">PROGRAMACION</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link mx-4 btnLogin-popup" href="#Login">LOGIN</button>
+                        <button class="nav-link mx-4 btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            LOGIN
+                        </button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-    <div class="">
-
-    </div>
-
-    <section class="seccion">
-        <div class="wrapper">
-            <span class="icon-close">
-                <i class="bi bi-x-square-fill"></i>
-            </span>
-
-            <div class="logreg-box">
-
-                <!--Login-->
-                <div class="form-box login">
-                    <div class="logreg-title">
-                        <h2>LOGIN</h2>
-                        <p>Por favor inicialo para registrarse</p>
-                    </div>
-
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icono"><i class="bi bi-envelope-fill"></i></span>
-                            <input type="email" required>
-                            <label>Email</label>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" style="min-height: 50rem; width: 70rem; padding: 10rem;"> <!-- Altura mínima personalizada -->
+            <div class="modal-content" style="font-size: 1.5rem;"> <!-- Texto más grande -->
+                <div class="modal-header text-center py-4">
+                    <h3 class="modal-title text-center" id="loginModalLabel" style="font-size: 2rem;">LOGIN</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-4"> <!-- Espaciado más amplio entre campos -->
+                            <label for="email" class="form-label" style="font-size: 1.7rem;">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" 
+                                   placeholder="nombre@ejemplo.com" required 
+                                   style="height: 3rem; font-size: 1.5rem;"> <!-- Campo más alto y texto más grande -->
                         </div>
-
-                        <div class="input-box">
-                            <span class="icono"><i class="bi bi-lock-fill"></i></span>
-                            <input type="password" required>
-                            <label>Password</label>
+                        <div class="mb-4">
+                            <label for="password" class="form-label" style="font-size: 1.7rem;">Contraseña</label>
+                            <input type="password" class="form-control" id="password" 
+                                   placeholder="******" required 
+                                   style="height: 3rem; font-size: 1.5rem;"> <!-- Campo más alto y texto más grande -->
                         </div>
-
-
-                        <div class="remember-forgot">
-                            <label><input type="checkbox">Remember me</label>
-                            <a href="#">Forgot password</a>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="recordarme">
+                            <label class="form-check-label" for="recordarme" style="font-size: 1.5rem;">Recordarme</label>
                         </div>
-                        <button type="submit" class="botonsito">Login</button>
-
-                        <div class="logreg-link">
-                            <p>Don account <a href="#" class="register-link">Registrar</a></p>
-                        </div>
+                        <button type="submit" class="btn btn-success w-100" style="font-size: 1.7rem; padding: 1rem;">
+                            Iniciar Sesión
+                        </button>
                     </form>
                 </div>
-
-                <!--Registrarse-->
-                <div class="form-box register">
-                    <div class="logreg-title">
-                        <h2>REGISTRARSE</h2>
-                        <p>Por favor registrarse wacho</p>
-                    </div>
-
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icono"><i class="bi bi-person-circle"></i></span>
-                            <input type="text" required>
-                            <label>Full name</label>
-                        </div>
-
-                        <div class="input-box">
-                            <span class="icono"><i class="bi bi-envelope-fill"></i></span>
-                            <input type="email" required>
-                            <label>Email</label>
-                        </div>
-
-                        <div class="input-box">
-                            <span class="icono"><i class="bi bi-lock-fill"></i></span>
-                            <input type="password" required>
-                            <label>Password</label>
-                        </div>
-
-
-                        <div class="remember-forgot">
-                            <label><input type="checkbox">agree to tj=he term & conditions</label>
-                        </div>
-                        <button type="submit" class="botonsito">Register</button>
-
-                        <div class="logreg-link">
-                            <p>Already have an account?<a href="#" class="login-link">Login</a></p>
-                        </div>
-                    </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" 
+                            style="font-size: 1.5rem; padding: 0.8rem;">
+                        Cerrar
+                    </button>
                 </div>
-            </div>
-
-            <div class="media-options">
-                <a href="#">
-                    <i class="bi bi-google"></i>
-                    <span>Login with Google</span>
-                </a>
-                <a href="#">
-                    <i class="bi bi-bootstrap-fill"></i>
-                    <span>Login with Bootstrap</span>
-                </a>
             </div>
         </div>
-    </section>
+    </div>
+    
+
+
+
 
     <header id="Inicio" class="Portada">
         <div class="P-Texto">
@@ -166,7 +109,8 @@
         <div class="imagenes">
             <i class="bi bi-code-slash EnHD"></i>
             <h1 class="frontend"><span class="caret">|</span>FULL STACK DEVELOPER </h1>
-            <p class="nombre"><span class="caret">|</span>DAVID DANIEL LUCANA MAMANI  <br> <span class="caret">|</span>IVAN FERNANDO MENDOZA CASTILLO</p>
+            <p class="nombre"><span class="caret">|</span>DAVID DANIEL LUCANA MAMANI <br> <span
+                    class="caret">|</span>IVAN FERNANDO MENDOZA CASTILLO</p>
         </div>
     </header>
 
@@ -341,7 +285,8 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 separacion  adelantar">
                 <div class="col py-4" style="background: rgb(0, 21, 29);">
                     <div class="card h-100 bg-transparent">
-                        <img src="img/Profesion/Tec_Infor.png" class="card-img-top img-uniform" alt="Técnico Informática">
+                        <img src="img/Profesion/Tec_Infor.png" class="card-img-top img-uniform"
+                            alt="Técnico Informática">
                         <div class="card-body">
                             <h2 class="card-title text-white py-4">TÉCNICO INFORMÁTICA</h2>
                             <button class="btn btn-danger fs-4">
@@ -353,7 +298,8 @@
                 </div>
                 <div class="col py-4" style="background: rgba(10, 4, 24, 0.589);">
                     <div class="card bg-transparent h-100">
-                        <img src="img/Profesion/Ciencia_Datos.png" class="card-img-top img-uniform" alt="Ciencia de Datos">
+                        <img src="img/Profesion/Ciencia_Datos.png" class="card-img-top img-uniform"
+                            alt="Ciencia de Datos">
                         <div class="card-body">
                             <h2 class="card-title text-white py-4">CIENCIA DE DATOS</h2>
                             <button class="btn btn-success fs-4">
