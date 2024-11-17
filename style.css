@@ -13,55 +13,55 @@ body{
 
 /* COLOREAR EL MENU */
 .Colorear {
-    background-color: rgb(1, 19, 39); /* Fondo de la barra de navegación */
-    position: fixed; /* Fija el menú en la parte superior */
-    width: 100%; /* Asegura que el menú ocupe todo el ancho */
-    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
-    top: 0; /* Asegura que el menú esté en la parte superior */
+    background-color: rgb(1, 19, 39);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
 }
 
 .Colorear a {
-    color: aqua; /* Color del texto de todos los enlaces */
+    color: aqua;
     text-decoration: none;
     transition: all 500ms ease;
     border-bottom: 4px solid transparent;
 }
 
 .Colorear a:hover {
-    color: #35fc35; /* Color de los enlaces al pasar el mouse */
+    color: #35fc35;
     border-bottom: 4px solid;
 }
 .Colorear button {
-    color: aqua; /* Color del texto de todos los enlaces */
+    color: aqua;
     text-decoration: none;
     transition: all 500ms ease;
     border-bottom: 4px solid transparent;
 }
 
 .Colorear button:hover {
-    color: #35fc35; /* Color de los enlaces al pasar el mouse */
+    color: #35fc35;
     border-bottom: 4px solid;
 }
 
 .Colorear .nav-link.active {
-    background-color: rgb(1, 19, 39); /* Fondo del enlace activo */
-    color: #183bd6; /* Color del texto del enlace activo */
+    background-color: rgb(1, 19, 39);
+    color: #183bd6;
 }
 
 .Colorear .dropdown-menu {
-    background-color: rgb(1, 19, 39); /* Fondo de menú desplegable */
+    background-color: rgb(1, 19, 39);
 }
 
 .Colorear .dropdown-item {
-    color: aqua; /* Color de los elementos del menú desplegable */
+    color: aqua;
     padding-top: 1rem;
     border-bottom: 4px solid transparent;
 }
 
 .Colorear .dropdown-item:hover {
-    background-color: rgb(1, 19, 39); /* Fondo de menú desplegable */
-    color: #35fc35; /* Color al pasar el mouse sobre los elementos del menú desplegable */
-    border-bottom: 4px solid; /* Estilo adicional al pasar el mouse */
+    background-color: rgb(1, 19, 39);
+    color: #35fc35;
+    border-bottom: 4px solid;
 }
 
 
@@ -304,7 +304,7 @@ body{
 .P-Texto {
     position: relative;
     z-index: 2;
-    color: rgb(170, 66, 255);
+    color: rgb(101, 245, 165);
     width: 45%; /* Ocupa el 45% del ancho */
     padding: 2.5rem;
     font-size: 2rem;

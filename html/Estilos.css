@@ -1,0 +1,147 @@
+.Fijo {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+
+/*PROGRAMACION*/
+.Portada2 {
+    position: relative;
+    background-image: url(/img/Htmls/Progra.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.Portada2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.Portada2 h1, .Portada2 p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    color: rgb(153, 255, 0);;
+}
+
+.Portada2 h1 {
+    transition: all 500ms ease;
+    border-bottom: 4px solid transparent;
+    font-size: 3rem;
+}
+
+.Portada2 p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* TECNOLOGIA */
+.Portada3 {
+    position: relative;
+    background-image: url(/img/Htmls/Tecno2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.Portada3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.Portada3 h1, .Portada3 p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    color: yellow;
+}
+
+.Portada3 h1 {
+    transition: all 500ms ease;
+    border-bottom: 4px solid transparent;
+    font-size: 3rem;
+}
+
+.Portada3 p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* ENSAMBLAJE*/
+.Portada4 {
+    position: relative;
+    background-image: url(/img/Htmls/Ensamblaje.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.Portada4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+.Portada4 h1, .Portada4 p {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Portada4 h1 {
+    transition: all 500ms ease;
+    border-bottom: 4px solid transparent;
+    font-size: 3rem;
+}
+
+.Portada4 p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
