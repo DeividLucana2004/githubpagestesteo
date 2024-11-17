@@ -10,7 +10,7 @@
 /*PROGRAMACION*/
 .Portada2 {
     position: relative;
-    background-image: url(/img/Htmls/Progra.png);
+    background-image: url(/githubpagestesteo/img/Htmls/Progra.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 40rem;
@@ -56,7 +56,7 @@
 /* TECNOLOGIA */
 .Portada3 {
     position: relative;
-    background-image: url(/img/Htmls/Tecno2.png);
+    background-image: url(/githubpagestesteo/img/Htmls/Tecno2.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 40rem;
@@ -102,7 +102,7 @@
 /* ENSAMBLAJE*/
 .Portada4 {
     position: relative;
-    background-image: url(/img/Htmls/Ensamblaje.png);
+    background-image: url(/githubpagestesteo/img/Htmls/Ensamblaje.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 40rem;
