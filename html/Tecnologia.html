@@ -21,7 +21,11 @@
     <div class=" container py-2 Fijo">
         <div class="row align-items-center text-center">
             <div class="col">
-                <p class="fs-5 mt-3 btn btn-outline-warning" style="color: aliceblue;">CLASES ONLINE</p>
+                <!-- Botón que abre el modal -->
+                <p class="fs-5 mt-3 btn btn-outline-warning" style="color: aliceblue;" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">
+                    CLASES ONLINE
+                </p>
             </div>
             <div class="col">
                 <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2"
@@ -46,8 +50,6 @@
                         </button>
                     </li>
                 </ul>
-                
-
             </div>
         </div>
     </div>
@@ -56,22 +58,161 @@
         <h1>TECNOLOGIA</h1>
         <div class="container">
             <p>Donde Aprenderas a conocer todas las tecnologias que abarcan en la actualidad</p>
-            
-            <p><a class="btn btn-outline-warning text-light" href="#" style="display: inline-block; text-align: center;">
-                <i class="bi bi-info-circle mx-1"></i>MAS INFORMACION
-            </a></p>
-        </div>
-        <main class="">
 
-        </main>
+            <p><a class="btn btn-outline-warning text-light" href="#cartas"
+                    style="display: inline-block; text-align: center;">
+                    <i class="bi bi-info-circle mx-1"></i>MAS INFORMACION
+                </a></p>
+            <br>
+            <div class="spinner-grow text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-dark" role="status">
+                <p class="visually-hidden">Loading...</p>
+            </div>
+        </div>
     </section>
-
-
-    <article class="Cartas">
+    <article class="Cartas py-4" id="cartas">
+        <h2 class="text-center py-4">¿QUE ES LO MAS SORPRENDENTE DE HOY?</h2>
         <div class="container">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, iusto? Minima officia iusto, doloremque atque consequuntur veritatis natus deleniti earum unde repudiandae incidunt voluptatum sed, tempore molestias tempora? Unde, eaque.</p>
+            <div class="row text-center">
+                <div class="col-sm-6 py-4 ">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">INTELIGENCIA ARTIFICIAL</h5>
+                            <p class="card-text">Rama de la informática que se enfoca en el desarrollo de sistemas y
+                                máquinas capaces de realizar tareas que normalmente requieren inteligencia humana, como
+                                aprendizaje, percepción, razonamiento y resolución de problemas.
+                            </p>
+                            <a href="#" class="btn btn-outline-info">MAS DETALLES</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 py-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">APPLE VISION PRO</h5>
+                            <p class="card-text">Un dispositivo de realidad mixta desarrollado por Apple que combina
+                                realidad aumentada y realidad virtual para ofrecer una experiencia inmersiva y de alta
+                                calidad.
+                            </p>
+                            <a href="#" class="btn btn-primary">MAS DETALLES</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 py-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">RELOJ PORTATIL</h5>
+                            <p class="card-text">ambién conocido como smartwatch, es un dispositivo electrónico que se
+                                lleva en la muñeca y que tiene funciones avanzadas, como monitoreo de actividad física,
+                                notificaciones, control de música, entre otras.
+                            </p>
+                            <a href="#" class="btn btn-primary">MAS DETALLES</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 py-4">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <h5 class="card-title">LAPTOPS AVANZADOS</h5>
+                            <p class="card-text">Computadoras portátiles con características de alto rendimiento, como
+                                procesadores de última generación, gran capacidad de almacenamiento, pantallas de alta
+                                resolución y autonomía mejorada.
+                            </p>
+                            <a href="#" class="btn btn-outline-info">MAS DETALLES</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 py-4">
+                    <div class="card">
+                        <div class="card-body bg-dark text-light">
+                            <h5 class="card-title">SMART PRO</h5>
+                            <p class="card-text">Término genérico que se refiere a dispositivos electrónicos avanzados,
+                                con capacidades de conectividad, automatización y control inteligente, como teléfonos
+                                inteligentes, asistentes virtuales, electrodomésticos, entre otros.
+                            </p>
+                            <a href="#" class="btn btn-outline-info">MAS DETALLES</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 py-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">COCHES VOLADORES</h5>
+                            <p class="card-text">También conocidos como vehículos aéreos personales, son prototipos de
+                                automóviles que pueden elevarse y volar, combinando la movilidad terrestre y aérea. Aún
+                                se encuentran en desarrollo y pruebas.
+                            </p>
+                            <a href="#" class="btn btn-primary">MAS DETALLES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </article>
+
+    <aside class="Prueba">
+        <div class="container">
+            <h1 class="text-center py-3">¿TE GUSTA HACER EL CRUD?</h1>
+
+            <!-- Botones CRUD -->
+            <div class="row text-center mb-3">
+                <div class="col-3">
+                    <button class="btn btn-success w-100" id="btnNuevo">Nuevo</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-primary w-100" id="btnAgregar">Agregar</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-warning w-100" id="btnModificar" disabled>Modificar</button>
+                </div>
+                <div class="col-3">
+                    <button class="btn btn-danger w-100" id="btnEliminar" disabled>Eliminar</button>
+                </div>
+            </div>
+
+            <!-- Tabla -->
+            <table class="table table-bordered" id="crudTable">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>@Email</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>1</td>
+                    <td>Ivan Fernando</td>
+                    <td>Mendoza Castillo</td>
+                    <td>Ivan1996@gmail.com</td>
+                    <td>28</td>
+                </tbody>
+            </table>
+        </div>
+    </aside>
+
 
     <footer class="PieCavezera2 py-4">
         <div class="container">
@@ -94,10 +235,9 @@
             </div>
         </div>
     </footer>
-    <script>
-
-    </script>
+    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
