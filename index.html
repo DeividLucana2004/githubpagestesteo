@@ -43,7 +43,8 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link mx-4 btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <button class="nav-link mx-4 btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
                             LOGIN
                         </button>
                     </li>
@@ -51,31 +52,34 @@
             </div>
         </div>
     </nav>
-    
+
+    <!-- Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered" style="min-height: 50rem; width: 70rem; padding: 10rem;"> <!-- Altura mínima personalizada -->
+        <div class="modal-dialog modal-lg modal-dialog-centered" style="max-width: 60rem;"> <!-- Modal más ancho -->
             <div class="modal-content" style="font-size: 1.5rem;"> <!-- Texto más grande -->
                 <div class="modal-header text-center py-4">
-                    <h3 class="modal-title text-center" id="loginModalLabel" style="font-size: 2rem;">LOGIN</h3>
+                    <h3 class="modal-title text-center w-100 text-dark" id="loginModalLabel" style="font-size: 2.5rem;">
+                        LOGIN</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="mb-4"> <!-- Espaciado más amplio entre campos -->
-                            <label for="email" class="form-label" style="font-size: 1.7rem;">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" 
-                                   placeholder="nombre@ejemplo.com" required 
-                                   style="height: 3rem; font-size: 1.5rem;"> <!-- Campo más alto y texto más grande -->
+                        <div class="mb-4"> <!-- Espaciado amplio entre campos -->
+                            <label for="email" class="form-label text-dark" style="font-size: 1.7rem;">Correo
+                                Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com"
+                                required style="height: 3.5rem; font-size: 1.5rem;"> <!-- Campo alto y texto grande -->
                         </div>
                         <div class="mb-4">
-                            <label for="password" class="form-label" style="font-size: 1.7rem;">Contraseña</label>
-                            <input type="password" class="form-control" id="password" 
-                                   placeholder="******" required 
-                                   style="height: 3rem; font-size: 1.5rem;"> <!-- Campo más alto y texto más grande -->
+                            <label for="password" class="form-label text-dark"
+                                style="font-size: 1.7rem;">Contraseña</label>
+                            <input type="password" class="form-control" id="password" placeholder="******" required
+                                style="height: 3.5rem; font-size: 1.5rem;"> <!-- Campo alto y texto grande -->
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="recordarme">
-                            <label class="form-check-label" for="recordarme" style="font-size: 1.5rem;">Recordarme</label>
+                            <label class="form-check-label" for="recordarme"
+                                style="font-size: 1.5rem;">Recordarme</label>
                         </div>
                         <button type="submit" class="btn btn-success w-100" style="font-size: 1.7rem; padding: 1rem;">
                             Iniciar Sesión
@@ -83,15 +87,16 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" 
-                            style="font-size: 1.5rem; padding: 0.8rem;">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        style="font-size: 1.5rem; padding: 0.8rem;">
                         Cerrar
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    
+
+
 
 
 

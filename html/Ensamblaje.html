@@ -18,7 +18,9 @@
     <div class="container py-2 Fijo">
         <div class="row align-items-center text-center">
             <div class="col">
-                <p class="fs-5 mt-2 btn btn-outline-danger" style="color: rgb(255, 255, 255);">CLASES ONLINE</p>
+                <p class="fs-5 mt-2 btn btn-outline-danger" style="color: rgb(255, 255, 255);" data-bs-toggle="modal"
+                data-bs-target="#loginModal">CLASES ONLINE</p>
+                
             </div>
             <div class="col">
                 <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu2"
@@ -48,6 +50,53 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 50rem;"> <!-- Modal más pequeño -->
+            <div class="modal-content" style="font-size: 1.2rem;"> <!-- Texto ligeramente más pequeño -->
+                <div class="modal-header text-center py-3">
+                    <h3 class="modal-title text-center w-100 text-dark" id="loginModalLabel" style="font-size: 2rem;">
+                        LOGIN
+                    </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3"> <!-- Espaciado ajustado -->
+                            <label for="email" class="form-label text-dark" style="font-size: 1.4rem;">
+                                Correo Electrónico
+                            </label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com"
+                                required style="height: 3rem; font-size: 1.2rem;"> <!-- Campo más bajo -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label text-dark" style="font-size: 1.4rem;">
+                                Contraseña
+                            </label>
+                            <input type="password" class="form-control" id="password" placeholder="******" required
+                                style="height: 3rem; font-size: 1.2rem;"> <!-- Campo más bajo -->
+                        </div>
+                        <div class="mb-2 form-check">
+                            <input type="checkbox" class="form-check-input" id="recordarme">
+                            <label class="form-check-label text-dark" for="recordarme" style="font-size: 1.2rem;">
+                                Recordarme
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100" style="font-size: 1.4rem; padding: 0.8rem;">
+                            Iniciar Sesión
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        style="font-size: 1.2rem; padding: 0.6rem;">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <section class="text-center Portada4">
         <div>

@@ -83,7 +83,7 @@
     align-items: center;
     padding: 2rem;
     overflow: hidden;
-    color: white;
+    color: rgb(53, 52, 39);
     text-align: center;
     z-index: 0; /* Cambiar el z-index para que no interfiera con el modal */
 }

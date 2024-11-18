@@ -53,6 +53,54 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 50rem;"> <!-- Modal más pequeño -->
+            <div class="modal-content" style="font-size: 1.2rem;"> <!-- Texto ligeramente más pequeño -->
+                <div class="modal-header text-center py-3">
+                    <h3 class="modal-title text-center w-100 text-dark" id="loginModalLabel" style="font-size: 2rem;">
+                        LOGIN
+                    </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3"> <!-- Espaciado ajustado -->
+                            <label for="email" class="form-label text-dark" style="font-size: 1.4rem;">
+                                Correo Electrónico
+                            </label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com"
+                                required style="height: 3rem; font-size: 1.2rem;"> <!-- Campo más bajo -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label text-dark" style="font-size: 1.4rem;">
+                                Contraseña
+                            </label>
+                            <input type="password" class="form-control" id="password" placeholder="******" required
+                                style="height: 3rem; font-size: 1.2rem;"> <!-- Campo más bajo -->
+                        </div>
+                        <div class="mb-2 form-check">
+                            <input type="checkbox" class="form-check-input" id="recordarme">
+                            <label class="form-check-label text-dark" for="recordarme" style="font-size: 1.2rem;">
+                                Recordarme
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100" style="font-size: 1.4rem; padding: 0.8rem;">
+                            Iniciar Sesión
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        style="font-size: 1.2rem; padding: 0.6rem;">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <section class="text-center Portada3">
         <h1>TECNOLOGIA</h1>
@@ -174,7 +222,7 @@
     <aside class="Prueba">
         <div class="container">
             <h1 class="text-center py-3">¿TE GUSTA HACER EL CRUD?</h1>
-
+    
             <!-- Botones CRUD -->
             <div class="row text-center mb-3">
                 <div class="col-3">
@@ -190,7 +238,7 @@
                     <button class="btn btn-danger w-100" id="btnEliminar" disabled>Eliminar</button>
                 </div>
             </div>
-
+    
             <!-- Tabla -->
             <table class="table table-bordered" id="crudTable">
                 <thead class="table-dark">
@@ -203,15 +251,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <td>1</td>
-                    <td>Ivan Fernando</td>
-                    <td>Mendoza Castillo</td>
-                    <td>Ivan1996@gmail.com</td>
-                    <td>28</td>
+                    <tr>
+                        <td>1</td>
+                        <td>Ivan Fernando</td>
+                        <td>Mendoza Castillo</td>
+                        <td>Ivan1996@gmail.com</td>
+                        <td>28</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
     </aside>
+    
 
 
     <footer class="PieCavezera2 py-4">
